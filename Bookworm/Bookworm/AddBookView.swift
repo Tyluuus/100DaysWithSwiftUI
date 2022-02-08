@@ -17,6 +17,7 @@ struct AddBookView: View {
     @State private var genre = ""
     @State private var review = ""
     
+    
     let genres = ["Fantasy", "Horror", "Kids", "Mystery", "Poetry", "Romance", "Thriller"]
     
     var body: some View {
@@ -58,6 +59,7 @@ struct AddBookView: View {
                             try? moc.save()
                             dismiss()
                         }
+                        
                     }
                 }
             .navigationTitle("Add Book")
